@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int dig(int n){
+    int c=0;
+    if(n==0)return 0;
+    return 1+dig(n/10);
+    c++;
+}
+int main(){
+    int n;
+    cin>>n;
+    cout<<dig(n);
+}
